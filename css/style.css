@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/*Обнулення*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+.area {
+	width: 300px;
+	height: 300px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.wrapper {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.cell {
+	width: 100px;
+	height: 100px;
+	border: 1px solid #000;
+	box-sizing: border-box;
+	font-size: 34px;
+	color: #2F4F4F;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.cell:hover {
+	background-color:rgb(227, 212, 212);
+}
+
+.res {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.start {
+	display: block;
+	margin: 0 auto;
+	padding: 10px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	font-size: 14px;
+	cursor: pointer;
+	background-color: rgb(83, 71, 71);
+	color: #fff;
+}
+
+.wrapper__info {
+	margin: 30px 0 0 0;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #000;
+	padding: 10px;
+	width: auto;
+	position: absolute;
+	right: 200px;
+	top: 0;
+}
+
+.winner-x {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.winner-null {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.draw {
+	font-size: 18px;
+}
+.stop {
+	pointer-events: none;
+}
